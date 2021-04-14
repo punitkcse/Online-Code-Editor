@@ -3,8 +3,8 @@ import Editor from './components/editor'
 
 function App() {
 
-  const [html,sethtml]=useState('<h1>Code your own way</h1>');
-  const [css,setcss]=useState('h1{color:grey;text-align:center;}body{background-color:hsl(225,6%,25%);}');
+  const [html,sethtml]=useState('<h1>Hello Punit here</h1>');
+  const [css,setcss]=useState('h1{color:grey;text-align:center;}');
   const [js,setjs]=useState('');
   const [srcDoc,setDoc]=useState('');
 
@@ -38,19 +38,19 @@ function App() {
       <div className="pane top-pane">
           <Editor
           language='xml'
-          name='html'
+          name='HTML'
           value={html}
           onchange={sethtml}
           />
           <Editor
           language='css'
-          name='css'
+          name='CSS'
           value={css}
           onchange={setcss}
           />
           <Editor
           language='javascript'
-          name='js'
+          name='Javascript'
           value={js}
           onchange={setjs}
           />
